@@ -1,4 +1,7 @@
 ###
+GET http://localhost:1337/setup
+
+###
 GET http://localhost:1337
 
 ###
