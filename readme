@@ -1,0 +1,56 @@
+# Node.js Application with Docker
+
+This project is a simple Node.js application with a PostgreSQL database, containerized using Docker.
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Prerequisites](#prerequisites)
+- [Getting Started](#getting-started)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Docker](#docker)
+
+## Introduction
+
+This project demonstrates a basic setup of a Node.js application with a PostgreSQL database running in separate Docker containers. It includes endpoints for basic CRUD operations on a "schools" table.
+
+## Prerequisites
+
+Ensure you have the following software installed:
+
+- Docker
+- Node.js
+- npm
+
+## Getting Started
+
+### Installation
+
+1. Clone the repository:
+
+   git clone https://github.com/Vanshul-Dahiya/rest-api-docker.git
+   cd rest-api-docker   
+
+2. Install dependencies:
+   npm install 
+
+
+###  Usage :
+
+To run the Node.js application locally, use the following command:
+
+   npm start
+
+### Docker :
+
+This project includes Docker support for both development and production environments.
+
+To run the application in development using Docker, use:
+
+  docker-compose up
+
+For a production setup, build the Docker image and run the containers:
+
+  docker build -t your-image-name .
+  docker-compose up
