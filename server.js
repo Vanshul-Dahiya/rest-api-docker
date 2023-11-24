@@ -7,8 +7,6 @@ app.use(express.json());
 
 // routes
 app.get("/", async (req, res) => {
-  res.send("Hello");
-  res.sendStatus(200);
   console.log(`home page ${res}`);
   try {
     const data = await pool.query("SELECT * FROM schools");
